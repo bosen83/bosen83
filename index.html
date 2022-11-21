@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coder-nav</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <div id="logo"></div>
+    <div class="input">
+        <input type="text" placeholder="请输入要搜索的内容" autocomplete="off" id="search-input">
+        <div class="picker">百度</div>
+        <ul id="engine" class="picker-list">
+            <li style="background-image: url(img/baidu.ico)">百度</li>
+            <li style="background-image: url(img/sougou.ico);">翻译</li>
+            <li style="background-image: url(img/blog.png);">云言</li>
+            <li style="background-image: url(img/linux.ico);">Linux</li>    
+            <li style="background-image: url(img/gitee.ico)">Gitee</li>
+            <li style="background-image: url(img/github.ico)">Github</li>
+        </ul>
+        <div id="hot-list" class="hot-list"></div>
+    </div>
+    <div class="search"></div>
+</div>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    $(function () {
+        helangSearch.init();
+    })
+</script>
+</body>
+</html>
