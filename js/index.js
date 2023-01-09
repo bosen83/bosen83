@@ -17,9 +17,7 @@ var helangSearch = {
             [0, 'Gitee - 基于Git的代码托管研发平台', 'https://gitee.com/'],
             [0, 'Github - Where the world builds software', 'https://github.com/'],
             [-1, '---------------------------工具类---------------------------', ''],
-            [0, '1010 在线超清影视网站', 'https://www.1010dy3.com/'], // https://www.fabu1010.com
             [0, '大米星球影视网站', 'https://www.lkfrp.com/'],
-            [0, 'VIP 在线视频解析', 'http://tool.liumingye.cn/video/'],
             [0, 'Lightly 在线编辑器', 'https://lightly.teamcode.com/dashboard'],
             [0, 'Photopea 在线PS', 'https://www.gaituya.com/ps/'],
             [0, 'ProcessOn 免费在线作图', 'https://www.processon.com/diagrams'],
@@ -27,66 +25,57 @@ var helangSearch = {
             [0, 'Cron 表达式生成器', 'https://www.toolscat.com/dev/cron'],
             [0, 'Hexconvert 进制转换', 'https://tool.lu/hexconvert'],
             [0, 'Timestamp 时间戳转换工具', 'https://tool.lu/timestamp/'],
-            [0, '正则表达式可视化', 'https://www.toolscat.com/dev/regex-view'],
-            [0, '正则表达式测试工具', 'https://tool.lu/regex/'],
+            [0, '正则表达式匹配工具', 'https://c.runoob.com/front-end/854/'],
             [0, '草料二维码生成器', 'https://cli.im/'],
             [0, '优设配色推荐导航', 'https://color.uisdc.com/pick.html'],
             [0, 'RGB 颜色代码生成器', 'https://htmlcolorcodes.com/color-picker/'],
-            [0, 'Postman 接口调试工具', 'https://www.toolscat.com/dev/postman'],
-            [0, 'SQL 转 JavaBean', 'https://www.toolscat.com/db/sql-java'],
-            [0, 'Json 转 JavaBean', 'https://www.toolscat.com/json/json-java'],
+            [0, 'Json 工具集合', 'https://www.toolscat.com/json/json-view'],
             [0, 'jQuery 插件库', 'https://www.jq22.com/'],
             [0, 'ECharts 开源可视化图表库', 'https://echarts.apache.org/examples/zh/index.html'],
-            [0, 'iLovePDF 在线工具', 'https://www.ilovepdf.com/'],
             [0, 'QQ 邮箱', 'http://mail.qq.com/'],
             [0, '163 邮箱', 'http://mail.163.com/'],
-            [0, '阿里云-网盘', 'https://www.aliyundrive.com/drive'],
             [0, '阿里云 Maven 仓库', 'https://developer.aliyun.com/mvn/guide'],
             [0, '网易云 Docker 镜像中心', 'https://c.163yun.com/hub#/home'],
-            [0, 'iconfont-阿里巴巴矢量图标库', 'https://www.iconfont.cn/'],
+            [0, 'Iconfont-阿里巴巴矢量图标库', 'https://www.iconfont.cn/'],
             [0, 'Data Structure Visualizations', 'https://www.cs.usfca.edu/~galles/visualization/Algorithms.html'],
             [-1, '---------------------------文档类---------------------------', ''],
             [0, 'DophinPHP 开发手册', 'https://www.kancloud.cn/ming5112/dolphinphp/256299'],
             [0, 'ThinkPHP 开发手册', 'https://www.kancloud.cn/manual/thinkphp5/118003'],
-            [0, 'RuoYi 若依开发文档', 'https://doc.ruoyi.vip/ruoyi-vue/'],
             [0, '微信官方文档', 'https://developers.weixin.qq.com/doc/'],
             [0, '支付宝开发文档', 'https://open.alipay.com/developmentDocument.htm'],
             [0, 'Vue3 中文文档', 'https://www.javascriptc.com/vue3js/'],
             [0, 'Node.js 菜鸟教程', 'https://www.runoob.com/nodejs/nodejs-tutorial.html'],
+            [0, 'NaiveUI 文档', 'https://www.naiveui.com/'],
             [0, 'ElementUI 文档', 'https://element-plus.org/zh-CN/#/zh-CN'],
-            [0, 'MySQL 命令汇总', 'https://blog.csdn.net/weixin_47600880/article/details/120470670'],
+            [0, '码上登录 API 文档', 'http://login.vicy.cn/apiWord.html'],
             [0, 'Redis 命令手册', 'https://www.redis.net.cn/order/'],
             [0, 'HTTP 状态码详解', 'https://www.toolscat.com/wiki/http'],
             [0, 'ASCII 码对照表', 'https://www.toolscat.com/wiki/ascii'],
             [0, 'HTML 特殊转义字符对照表', 'https://www.toolscat.com/wiki/html'],
             [0, 'Content-Type参照表', 'https://www.toolscat.com/wiki/http-content-type'],
             [0, 'Git 提交规范', 'https://zhuanlan.zhihu.com/p/67804026'],
-            [0, 'Git 命令汇总', 'https://blog.csdn.net/weixin_47600880/article/details/117828291'],
-            [0, 'Linux 命令摘抄', 'https://blog.csdn.net/weixin_47600880/article/details/119645212'],
             [0, 'vi/vim 快速上手', 'https://blog.csdn.net/weixin_47600880/article/details/119744260'],
             [0, 'SpringBoot 开源电子书', 'https://www.cntofu.com/book/87/index.html'],
             [0, 'Java 面试题十万字总结', 'https://www.aliyundrive.com/s/Sgy5cydiDsH'],
             [0, 'Learning Git Branching', 'https://learngitbranching.js.org/'],
-            [0, 'The Linux Command Line 中文版', 'https://www.kancloud.cn/thinkphp/linux-command-line/39431'],
             [-1, '---------------------------软件类---------------------------', ''],
             [0, 'Chrome 谷歌浏览器', 'https://www.google.cn/chrome/'],
-            [0, 'Git 官方下载链接', 'https://git-scm.com/download'],
-            [0, 'Postman API接口测试神器', 'https://www.postman.com/downloads/'],
-            [0, 'Typora 免费版（Windows）', 'http://www.itmind.net/13398.html'],
+            [0, 'IDEA Java 编辑器', 'https://www.jetbrains.com/idea/'],
+            [0, 'PhpStorm PHP 编辑器', 'https://www.jetbrains.com/phpstorm/'],
+            [0, 'DBeaver 数据库可视化工具', 'https://www.exception.site/essay/datagrip-2022-pojie'],
             [0, 'Sublime 超轻量级文本编辑器', 'https://www.sublimetext.com/'],
-            [0, 'VS Code 最受欢迎的的编辑器', 'https://code.visualstudio.com/'],
-            [0, 'NxShell 跨平台SSH终端工具', 'https://apps.microsoft.com/store/detail/nxshell/9N0NP4JJ192W?hl=zh-cn&gl=cn'],
-            [0, 'IntelliJ IDEA 破解教程', 'https://www.exception.site/article/29'],
-            [0, 'DataGrip 破解教程', 'https://www.exception.site/essay/datagrip-2022-pojie'],
-            [0, 'ToDesk 远程控制软件', 'https://www.todesk.com/'],
+            [0, 'NxShell 跨平台 SSH 终端工具', 'https://github.com/nxshell/nxshell/releases'],
+            [0, 'Windows 终端工具', 'https://github.com/microsoft/terminal/releases'],
+            [0, 'Git 版本管理工具', 'https://git-scm.com/download'],
+            [0, 'Sourcetree Git 可视化工具', 'https://www.sourcetreeapp.com/'],
+            [0, 'Postman API接口测试神器', 'https://www.postman.com/downloads/'],
             [0, 'Redis 官方可视化工具', 'https://redis.com/redis-enterprise/redis-insight/'],
             [0, 'WPS Office 个人版', 'https://www.wps.cn/product/wps2016/'],
-            [0, 'Visual-NMP-集成环境', 'https://www.jb51.net/softs/576491.html'],
+            [0, 'Typora Markdown 编辑器', 'http://www.itmind.net/13398.html'],            
+            [0, 'ToDesk 远程控制软件', 'https://www.todesk.com/'],            
+            [0, 'Visual-NMP 集成环境', 'https://visual-nmp.en.softonic.com/'],
             [0, 'AdBlock 广告拦截插件', 'https://adblockplus.org/zh_CN/'],
-            [0, 'PhpStorm 破解教程', 'http://www.itmind.net/46245.html'],
-            [0, 'Xshell7 + Xftp7 免费版', 'http://www.itmind.net/12766.html'],
-            [0, 'Navicat 破解版（激活码）', 'http://www.itmind.net/12557.html'],
-            [0, 'Office2013 激活', 'http://www.itmind.net/13009.html'],
+            [0, 'IntelliJ 软件脚本', 'https://pan.baidu.com/s/1gNxkKuXniSLf9vTuwZSKZA?pwd=3w0k'],
             [0, 'Shadowsocks VPN 翻墙软件', 'https://pan.baidu.com/s/1XfNrh8CWlweuoGyKvWJv6g?pwd=zmg1'], // https://github.com/Alvin9999/new-pac/wiki
             [-1, '--------------------------------------------------------------', ''],
         ],
@@ -230,10 +219,10 @@ function setSearchList(helangSearch, serachList) {
     helangSearch.els.hotList.html(function () {
         var str='';
         $.each(serachList, function (index,item) {
-            var ico = "https://api.qqsuu.cn/api/favicon/get.php?url=" + item[2];
             str +='<a href="' + item[2] + '">';
             str +='<div class="number" style="color: #6BB0EC">'+(index+1)+'</div>';
-            str += item[2] != '' ? "<img onerror='imgerrorfun();' style='width: 18px; height: 18px; float: left; padding: 5px; border-radius: 100%' src=" + ico + ">" : '';
+            str += item[2] != '' ? "<img onerror='imgerrorfun();' style='width: 18px; height: 18px; float: left; padding: 5px; border-radius: 100%' src=" 
+            	+ getFavicon(item[2]) + ">" : '';
             str +='<div style="color: #6b6e74">' + item[1] + '</div>';
             str +='</a>';
         });
@@ -282,3 +271,14 @@ function quickSort(arr) {
   }
   return quickSort(left).concat([pivot], quickSort(right));
 };
+
+/** 获取网页图标 */
+function getFavicon(href) { 
+    var reg = new RegExp(/(\w+):\/\/([^/:]+)(:\d*)?/)
+    let matchObj = href.match(reg)
+    if (matchObj) {
+      return matchObj[0] + '/favicon.ico'
+    } else {
+      return null
+    }
+}
