@@ -75,7 +75,7 @@ var helangSearch = {
             [0, 'ToDesk 远程控制软件', 'https://www.todesk.com/'],            
             [0, 'Visual-NMP 集成环境', 'https://visual-nmp.en.softonic.com/'],
             [0, 'AdBlock 广告拦截插件', 'https://adblockplus.org/zh_CN/'],
-            [0, 'IntelliJ 软件脚本', 'https://pan.baidu.com/s/1gNxkKuXniSLf9vTuwZSKZA?pwd=3w0k'],
+            [0, 'IntelliJ 软件脚本', 'https://pan.baidu.com/s/1-VYOPcC9QNT-1_41gMxP5A?pwd=rzqa'],
             [0, 'Shadowsocks VPN 翻墙软件', 'https://pan.baidu.com/s/1XfNrh8CWlweuoGyKvWJv6g?pwd=zmg1'], // https://github.com/Alvin9999/new-pac/wiki
             [-1, '--------------------------------------------------------------', ''],
         ],
