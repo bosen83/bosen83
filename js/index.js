@@ -84,7 +84,7 @@ var helangSearch = {
         href: [
             'https://www.baidu.com/s?wd=',
             'https://fanyi.sogou.com/text?keyword=',
-            'https://so.csdn.net/so/search?t=blog&u=weixin_47600880&q=',
+            'https://unbug.github.io/codelf/#',
             'https://linux.cmsblogs.cn/list.html#!kw=',
             'https://search.gitee.com/?q=',
             'https://github.com/search?q=',
