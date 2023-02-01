@@ -169,11 +169,11 @@ var helangSearch = {
 
         /* 搜索按钮 */
         this.els.button.click(function () {
-            window.location.href = _this.hot.href[_this.searchIndex] + _this.els.input.val();
+            window.location.href = _this.hot.href[_this.searchIndex] + dealSpecial(_this.els.input.val());
         });
         $('#search-input').bind('keypress', function (event) {
             if(event.keyCode == 13) {
-            window.location.href = _this.hot.href[_this.searchIndex] + _this.els.input.val();            }
+            window.location.href = _this.hot.href[_this.searchIndex] + dealSpecial(_this.els.input.val());            }
         });
     }
 };
@@ -282,4 +282,9 @@ function getFavicon(href) {
     } else {
       return null
     }
+}
+
+/** 特殊符号的处理 */
+function dealSpecial(string) {
+    return string.replace(/\%/g,'%25').replace(/\#/g,'%23').replace(/\+/g,'%2B').replace(/\"/g,'%22').replace(/\'/g, '%27').replace(/\//g,'%2F').replace(' ','+').replace(/\?/g,'%3F').replace(/\&/g,'%26').replace(/\=/g,'%3D');
 }
