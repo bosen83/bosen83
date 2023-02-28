@@ -66,7 +66,8 @@ var helangSearch = {
             [0, 'Chrome 谷歌浏览器', 'https://www.google.cn/chrome/'],
             [0, 'IDEA Java 编辑器', 'https://www.jetbrains.com/idea/'],
             [0, 'PhpStorm PHP 编辑器', 'https://www.jetbrains.com/phpstorm/'],
-            [0, 'DBeaver 数据库可视化工具', 'https://dbeaver.io/'],
+            [0, 'DataGrip 数据库管理工具', 'https://www.jetbrains.com/zh-cn/datagrip/'],
+            [0, 'DBeaver 数据库管理工具', 'https://dbeaver.io/'],
             [0, 'Sublime 超轻量级文本编辑器', 'https://www.sublimetext.com/'],
             [0, 'NxShell 跨平台 SSH 终端工具', 'https://github.com/nxshell/nxshell/releases'],
             [0, 'Windows 终端工具', 'https://github.com/microsoft/terminal/releases'],
@@ -87,7 +88,7 @@ var helangSearch = {
         // 搜索引擎
         href: [
             'https://www.baidu.com/s?wd=',
-            'https://fanyi.sogou.com/text?keyword=',
+            'https://fanyi.baidu.com/translate?query=&keyfrom=baidu&smartresult=dict&lang=auto/#en/zh/',
             'https://unbug.github.io/codelf/#',
             'https://linux.cmsblogs.cn/list.html#!kw=',
             'https://search.gitee.com/?q=',
