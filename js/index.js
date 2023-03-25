@@ -17,6 +17,7 @@ var helangSearch = {
             [0, 'Gitee - 基于Git的代码托管研发平台', 'https://gitee.com/'],
             [0, 'Github - Where the world builds software', 'https://github.com/'],
             [-1, '---------------------------工具类---------------------------', ''],
+            [0, '双十电影影视网站', 'https://www.1010dy.cc/'], // https://www.fabu1010.com/
             [0, '大米星球影视网站', 'https://www.lkfrp.com/'],
             [0, 'Lightly 在线编辑器', 'https://lightly.teamcode.com/dashboard'],
             [0, 'Photopea 在线PS', 'https://www.gaituya.com/ps/'],
