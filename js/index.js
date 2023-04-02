@@ -87,6 +87,7 @@ var helangSearch = {
             [0, 'AD 钙奶', 'https://gainai.adgn.top/'],
             [0, 'Windows 激活工具', 'https://pan.baidu.com/s/1G9XTl2ngAPo8WlHhs8dkiQ?pwd=9j23'],
             [0, 'IntelliJ 软件脚本', 'https://pan.baidu.com/s/1-VYOPcC9QNT-1_41gMxP5A?pwd=rzqa'],
+            [0, 'Byrut 二号宝藏网站', 'https://gainai.adgn.top/'],
             [-1, '--------------------------------------------------------------', ''],
         ],
         // 搜索引擎
