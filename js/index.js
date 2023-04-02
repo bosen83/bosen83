@@ -84,9 +84,9 @@ var helangSearch = {
             [0, 'Geek 软件卸载工具', 'https://geekuninstaller.com/'],              
             [0, 'Everything 文件查找工具', 'https://www.voidtools.com/zh-cn/'],   
             [0, 'Visual-NMP 集成环境', 'https://visual-nmp.en.softonic.com/'],
+            [0, 'AD 钙奶', 'https://gainai.adgn.top/'],
             [0, 'Windows 激活工具', 'https://pan.baidu.com/s/1G9XTl2ngAPo8WlHhs8dkiQ?pwd=9j23'],
             [0, 'IntelliJ 软件脚本', 'https://pan.baidu.com/s/1-VYOPcC9QNT-1_41gMxP5A?pwd=rzqa'],
-            [0, 'Free Air 自由上网', 'https://github.com/Alvin9999/new-pac/wiki'],
             [-1, '--------------------------------------------------------------', ''],
         ],
         // 搜索引擎
