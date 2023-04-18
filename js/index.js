@@ -59,6 +59,7 @@ var helangSearch = {
             [0, 'HTML 特殊转义字符对照表', 'https://www.toolscat.com/wiki/html'],
             [0, 'Content-Type参照表', 'https://www.toolscat.com/wiki/http-content-type'],
             [0, 'Git 提交规范', 'https://zhuanlan.zhihu.com/p/67804026'],
+            [0, '代码随想录', 'https://programmercarl.com/'],
             [0, 'vi/vim 快速上手', 'https://blog.csdn.net/weixin_47600880/article/details/119744260'],
             [0, 'SpringBoot 开源电子书', 'https://www.cntofu.com/book/87/index.html'],
             [0, 'Java 面试题十万字总结', 'https://www.aliyundrive.com/s/Sgy5cydiDsH'],
@@ -87,7 +88,7 @@ var helangSearch = {
             [0, 'AD 钙奶', 'https://gainai.adgn.top/'],
             [0, 'Windows 激活工具', 'https://pan.baidu.com/s/1G9XTl2ngAPo8WlHhs8dkiQ?pwd=9j23'],
             [0, 'IntelliJ 软件脚本', 'https://pan.baidu.com/s/1-VYOPcC9QNT-1_41gMxP5A?pwd=rzqa'],
-            [0, 'Byrut 二号宝藏网站', 'https://gainai.adgn.top/'],
+            [0, 'Byrut 二号宝藏网站', 'https://byrut.org/'],
             [-1, '--------------------------------------------------------------', ''],
         ],
         // 搜索引擎
