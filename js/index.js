@@ -87,7 +87,7 @@ var helangSearch = {
             [0, 'Visual-NMP 集成环境', 'https://visual-nmp.en.softonic.com/'],
             [0, 'AD 钙奶', 'https://gainai.adgn.top/'],
             [0, 'Windows 激活工具', 'https://pan.baidu.com/s/1G9XTl2ngAPo8WlHhs8dkiQ?pwd=9j23'],
-            [0, 'Navicat 激活工具', 'https://pan.baidu.com/s/1FmJ-jYUSXXEUpu2jlCxCKg?pwd=z61h'],
+            [0, 'Navicat 激活工具', 'https://pan.baidu.com/s/1707DPwqkXQ0SqzAvXRmtXA?pwd=7jxc'],
             [0, 'IntelliJ 激活工具', 'https://pan.baidu.com/s/1-VYOPcC9QNT-1_41gMxP5A?pwd=rzqa'],
             [0, 'Byrut 二号宝藏网站', 'https://byrut.org/'],
             [-1, '--------------------------------------------------------------', ''],
