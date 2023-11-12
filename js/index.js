@@ -32,7 +32,7 @@ var helangSearch = {
             [0, '草料二维码生成器', 'https://cli.im/'],
             [0, '优设配色推荐导航', 'https://color.uisdc.com/pick.html'],
             [0, 'RGB 颜色代码生成器', 'https://htmlcolorcodes.com/color-picker/'],
-            [0, 'Json 工具集合', 'https://www.toolscat.com/json/json-view'],
+            [0, 'Json 工具集合', 'https://www.json.cn/'],
             [0, 'WebSocket 在线测试', 'http://wstool.jackxiang.com/'],
             [0, 'jQuery 插件库', 'https://www.jq22.com/'],
             [0, 'ECharts 开源可视化图表库', 'https://echarts.apache.org/examples/zh/index.html'],
