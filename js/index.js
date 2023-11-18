@@ -94,7 +94,7 @@ var helangSearch = {
         ],
         // 搜索引擎
         href: [
-            'https://www.baidu.com/s?wd=',
+            'https://www.bing.com/search?q=',
             'https://fanyi.baidu.com/translate?query=&keyfrom=baidu&smartresult=dict&lang=auto/#en/zh/',
             'https://unbug.github.io/codelf/#',
             'https://linux.cmsblogs.cn/list.html#!kw=',
