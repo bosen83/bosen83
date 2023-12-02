@@ -27,7 +27,7 @@ var helangSearch = {
             [0, 'Hexconvert 进制转换', 'https://tool.lu/hexconvert'],
             [0, 'Timestamp 时间戳转换工具', 'https://tool.lu/timestamp/'],
             [0, 'FreeAPI 开源 API 大全', 'https://www.free-api.com/'],
-            [0, 'Methodot 免费数据库', 'https://factory.methodot.com/mart/home'],
+            [0, 'Wsfdb 免费数据库', 'https://wsfdb.cn/'],
             [0, '正则表达式匹配工具', 'https://c.runoob.com/front-end/854/'],
             [0, '草料二维码生成器', 'https://cli.im/'],
             [0, '优设配色推荐导航', 'https://color.uisdc.com/pick.html'],
