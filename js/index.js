@@ -150,7 +150,7 @@ var helangSearch = {
                 var hotList = _this.hot.list;
                 var serachList = new Array();
                 for(var i = 0; i < hotList.length; i++) {
-                    var flag = getSimilarity(hotList[i][1], $(this).val());
+                    var flag = getSimilarity($(this).val(), hotList[i][1]);
                     if(flag && hotList[i][0] != -1) {
                         // 设置匹配度排序权值
                         hotList[i][0] = flag; 
