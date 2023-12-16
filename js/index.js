@@ -14,7 +14,7 @@ var helangSearch = {
             [0, 'Gitee - 基于Git的代码托管研发平台', 'https://gitee.com/'],
             [0, 'Github - Where the world builds software', 'https://github.com/'],
             [-1, '---------------------------工具类---------------------------', ''],
-            [0, '大米星球影视网站', 'https://www.lkfrp.com/'],
+            [0, '大米星球影视网站', 'https://www.dmdy1.vip/'],
             [0, 'Photopea 在线PS', 'https://www.gaituya.com/ps/'],
             [0, 'ProcessOn 免费在线作图', 'https://www.processon.com/diagrams'],
             [0, 'MD5 加密工具', 'https://www.toolhelper.cn/DigestAlgorithm/MD5'],
