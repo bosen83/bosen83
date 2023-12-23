@@ -71,6 +71,7 @@ var helangSearch = {
             [0, 'Git 版本管理工具', 'https://git-scm.com/download'],
             [0, 'Sourcetree Git 可视化工具', 'https://www.sourcetreeapp.com/'],
             [0, 'Postman API接口测试神器', 'https://www.postman.com/downloads/'],
+            [0, 'Apifox API接口测试神器', 'https://apifox.com/'],
             [0, 'Another Redis 可视化工具', 'https://github.com/qishibo/AnotherRedisDesktopManager/releases'],
             [0, 'WPS Office 个人版', 'https://www.wps.cn/product/wps2016/'],
             [0, 'Typora Markdown 编辑器', 'http://www.itmind.net/13398.html'],            
