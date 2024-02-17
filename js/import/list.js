@@ -47,7 +47,7 @@ function getList() {
 	    [0, 'Content-Type参照表', 'https://www.toolscat.com/wiki/http-content-type'],
 	    [0, 'Git 提交规范', 'https://zhuanlan.zhihu.com/p/67804026'],
 	    [0, '代码随想录', 'https://programmercarl.com/'],
-	    [0, 'FreeAPI 开源 API 大全', 'https://www.free-api.com/'],
+	    [0, 'Api 开源 API 大全', 'https://api.aa1.cn/'],
 	    [0, 'Java 面试题十万字总结', 'https://www.aliyundrive.com/s/Sgy5cydiDsH'],
 	    [0, 'Learning Git Branching', 'https://learngitbranching.js.org/'],
 	    [-1, '---------------------------软件类---------------------------', ''],
