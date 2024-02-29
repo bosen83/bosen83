@@ -9,3 +9,11 @@ function getEngine() {
         'https://linux.cmsblogs.cn/list.html#!kw=',
     ];
 }
+
+// 引擎扩展
+function engineExtend(search, extend) {
+    setSearchList(search, search.hot.list);
+    if(search.searchIndex != 0) {
+        setSearchList(search, extend);
+    }
+}

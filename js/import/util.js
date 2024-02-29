@@ -1,4 +1,4 @@
-/** 按键监听 */
+// 按键监听
 document.onkeydown = function (event) {
     var e = event || window.event || arguments.callee.caller.arguments[0];
     // 输入框获取焦点
@@ -16,6 +16,7 @@ document.onkeydown = function (event) {
                 helangSearch.els.pickerBtn.html(engine[i].innerText);
             }
         }
+        engineExtend(helangSearch, []);
     }
     // esc 隐藏导航列表
     if(e.keyCode == 27) {
@@ -35,30 +36,14 @@ document.onkeydown = function (event) {
     }
 }
 
-/** 设置搜索导航列表 */
-function setSearchList(helangSearch, serachList) {
-    helangSearch.els.hotList.html(function () {
-        var str='';
-        $.each(serachList, function (index,item) {
-            str +='<a href="' + item[2] + '">';
-            str +='<div class="number" style="color: #6BB0EC">'+(index+1)+'</div>';
-            str += item[2] != '' ? "<img onerror='imgerrorfun();' style='width: 18px; height: 18px; float: left; padding: 5px; border-radius: 100%' src=" 
-            	+ getFavicon(item[2]) + ">" : '';
-            str +='<div style="color: #6b6e74">' + item[1] + '</div>';
-            str +='</a>';
-        });
-        return str;
-    });
-}
-
-/** 图片无法正常显示使用默认图片 */
+// 图片无法正常显示使用默认图片
 function imgerrorfun(){ 
     var img = event.srcElement; 
     img.src = "favicon.ico";
     img.onerror = null; 
 } 
 
-/** 获取两个字符串的相似度 */
+// 获取两个字符串的相似度
 function getSimilarity(str1, str2) {
     let sameNum = 0;
     for (let i = 0; i < str1.length; i++) {
@@ -73,7 +58,7 @@ function getSimilarity(str1, str2) {
     return (sameNum/length) * 100 || 0;
 }
 
-/** 根据权值快排 */
+// 根据权值快排
 function quickSort(arr) {
   if (arr.length <= 1) {
     return arr;
@@ -93,7 +78,7 @@ function quickSort(arr) {
   return quickSort(left).concat([pivot], quickSort(right));
 };
 
-/** 获取网页图标 */
+// 获取网页图标
 function getFavicon(href) { 
     var reg = new RegExp(/(\w+):\/\/([^/:]+)(:\d*)?/)
     let matchObj = href.match(reg)
@@ -104,7 +89,45 @@ function getFavicon(href) {
     }
 }
 
-/** 特殊符号的处理 */
+// 特殊符号的处理
 function dealSpecial(string) {
     return string.replace(/\%/g,'%25').replace(/\#/g,'%23').replace(/\+/g,'%2B').replace(/\"/g,'%22').replace(/\'/g, '%27').replace(/\//g,'%2F').replace(' ','+').replace(/\?/g,'%3F').replace(/\&/g,'%26').replace(/\=/g,'%3D');
+}
+
+// 发送请求
+function ajax(type, url, parmas, callback) {
+    //创建ajax引擎对象
+    let xhr = new XMLHttpRequest();
+    //处理参数,定义一个空数组
+    let arr = [];
+    //遍历对象，拼接到数组中
+    for (const key in parmas) {
+        if (Object.hasOwnProperty.call(parmas, key)) {
+            arr.push(key + "=" + parmas[key]);                   
+        }
+    }
+    parmas = arr.join("&");
+
+    if (type == "get") {
+        //配置请求方式和请求地址
+        xhr.open(type, url + "?"+ parmas);
+        // 发送请求
+        xhr.send();
+    } else {
+        //配置请求方式和请求地址
+        xhr.open(type, url);
+        //请求头
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        // 发送请求
+        xhr.send(parmas);
+    }
+
+    // 监听状态变化和接收数据
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            // 处理数据
+            return JSON.parse(xhr.responseText);
+        }
+    }
+
 }

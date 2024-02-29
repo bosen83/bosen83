@@ -45,6 +45,7 @@ var helangSearch = {
             _this.els.logo.css("background-image",('url(img/'+$(this).data("logo")+')'));
             _this.searchIndex=$(this).index();
             _this.els.pickerBtn.html($(this).html())
+            engineExtend(_this, []);
         });
 
         /* 搜索 输入框 点击*/

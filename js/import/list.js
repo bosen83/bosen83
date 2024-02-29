@@ -80,3 +80,19 @@ function getList() {
 	    [-1, '--------------------------------------------------------------', ''],
 	];
 }
+
+// 设置搜索导航列表
+function setSearchList(helangSearch, serachList) {
+    helangSearch.els.hotList.html(function () {
+        var str='';
+        $.each(serachList, function (index,item) {
+            str +='<a href="' + item[2] + '">';
+            str +='<div class="number" style="color: #6BB0EC">'+(index+1)+'</div>';
+            str += item[2] != '' ? "<img onerror='imgerrorfun();' style='width: 18px; height: 18px; float: left; padding: 5px; border-radius: 100%' src=" 
+            	+ getFavicon(item[2]) + ">" : '';
+            str +='<div style="color: #6b6e74">' + item[1] + '</div>';
+            str +='</a>';
+        });
+        return str;
+    });
+}
