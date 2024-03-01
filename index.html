@@ -11,22 +11,22 @@
     <div id="logo"></div>
     <div class="input">
         <input type="text" placeholder="请输入要搜索的内容" autocomplete="off" id="search-input">
-        <div class="picker">Bing</div>
+        <div class="picker">必应</div>
         <ul id="engine" class="picker-list">
-            <li style="background-image: url(img/windows.ico)">Bing</li>
-            <li style="background-image: url(img/baidu.ico);">翻译</li>
+            <li style="background-image: url(img/windows.ico)">必应</li>
+            <li style="background-image: url(img/youdao.png);">有道</li>
             <li style="background-image: url(img/linux.ico);">Linux</li>    
         </ul>
         <div id="hot-list" class="hot-list"></div>
     </div>
     <div class="search"></div>
+    <div id="context"></div>
 </div>
 <script src="js/import/config.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/index.js"></script>
 <script type="text/javascript">
     $(function () {
         helangSearch.init();
+        helangSearch.els.hotList.hide();
     })
 </script>
 </body>

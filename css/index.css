@@ -148,3 +148,19 @@ a:focus {
 ::-webkit-scrollbar {
     width:0;
 }
+.list-num {
+    color: #6BB0EC
+}
+.list-img {
+    width: 18px; 
+    height: 18px; 
+    float: left; 
+    padding: 5px; 
+    border-radius: 100%
+}
+.list-url {
+    color:#6b6e74;
+    width:380px;
+    display:inline;
+    overflow:auto;
+}

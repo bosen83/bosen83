@@ -1,11 +1,28 @@
 // 搜索引擎
-function getEngine() {
-	return [
-		// 必应
-        'https://www.bing.com/search?q=',
-        // 百度翻译
-        'https://fanyi.baidu.com/translate?query=&keyfrom=baidu&smartresult=dict&lang=auto/#en/zh/',
-        // linux命令
-        'https://linux.cmsblogs.cn/list.html#!kw=',
+function getEngineList() {
+    return [
+        {
+            // 必应
+            'engine': 'https://www.bing.com/search?q=',
+            'list': getDefaultList() 
+        },
+        {
+            // 有道
+            'engine': 'https://fanyi.youdao.com/index.html#/#',
+            'list': getFanyiList()
+        },
+        {
+            // Linux 命令列表
+            'engine': 'https://linux.cmsblogs.cn/list.html#!kw=',
+            'list': getLinuxList()
+        },
     ];
+}
+
+// 设置引擎
+function setEngineList() {
+    engine = getEngineList()[helangSearch.searchIndex];
+    setSearchList(engine.list);
+    helangSearch.els.hotList.show();
+    document.getElementById("search-input").focus();
 }
