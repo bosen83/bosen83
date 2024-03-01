@@ -23,14 +23,7 @@ function getEngineList() {
 function setEngineList() {
     engine = getEngineList()[helangSearch.searchIndex];
     setSearchList(engine.list);
+    helangSearch.els.pickerList.hide();
     helangSearch.els.hotList.show();
     document.getElementById("search-input").focus();
-}
-
-// 引擎扩展
-function engineExtend(search, extend) {
-    setSearchList(search, search.hot.list);
-    if(search.searchIndex != 0) {
-        setSearchList(search, extend);
-    }
 }

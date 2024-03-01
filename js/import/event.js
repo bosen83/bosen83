@@ -16,6 +16,7 @@ document.onkeydown = function (event) {
     // esc 隐藏导航列表/获取焦点
     if(e.keyCode == 27) {
         index = -1;
+        helangSearch.els.pickerList.hide();
         helangSearch.els.hotList.hide();
         document.getElementById("search-input").focus();
     }
