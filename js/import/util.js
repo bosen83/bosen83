@@ -1,44 +1,3 @@
-<<<<<<< HEAD
-=======
-// 按键监听
-document.onkeydown = function (event) {
-    var e = event || window.event || arguments.callee.caller.arguments[0];
-    // 输入框获取焦点
-    if(index == -1) {
-        document.getElementById("search-input").focus();
-    }
-    // ctrl + 回车 切换搜索引擎
-    if(e.ctrlKey && e.keyCode == 13) {
-        var engine = document.getElementById('engine').getElementsByTagName('li');
-        helangSearch.searchIndex = 
-            helangSearch.searchIndex == 
-                helangSearch.hot.href.length - 1 ? 0 : helangSearch.searchIndex + 1;
-        for(var i = 0; i < helangSearch.hot.href.length; i++) {
-            if(i == helangSearch.searchIndex) {
-                helangSearch.els.pickerBtn.html(engine[i].innerText);
-            }
-        }
-        engineExtend(helangSearch, []);
-    }
-    // esc 隐藏导航列表
-    if(e.keyCode == 27) {
-        index = -1;
-        helangSearch.els.hotList.hide();
-    }
-    // ↑ ↓ 显示导航列表/选择导航
-    if(e.keyCode == 38 || e.keyCode == 40) {
-        var as = document.getElementById("hot-list").getElementsByTagName("a");
-        helangSearch.els.hotList.show();
-        if(e.keyCode == 38) {
-            index = index > -1 ? index - 1 : -1;
-        } else {
-            index = index < as.length - 1 ? index + 1 : as.length - 1; 
-        }
-        index == -1 ? document.getElementById("search-input").focus() : as[index].focus();
-    }
-}
-
->>>>>>> 6f8ec74a56de2b0ed032374b8a83ef2ab60eee08
 // 图片无法正常显示使用默认图片
 function imgerrorfun(){ 
     var img = event.srcElement; 
@@ -92,11 +51,7 @@ function getFavicon(href) {
     }
 }
 
-<<<<<<< HEAD
 // 输入框特殊符号处理
-=======
-// 特殊符号的处理
->>>>>>> 6f8ec74a56de2b0ed032374b8a83ef2ab60eee08
 function dealSpecial(string) {
     return string.replace(/\%/g,'%25').replace(/\#/g,'%23').replace(/\+/g,'%2B').replace(/\"/g,'%22').replace(/\'/g, '%27').replace(/\//g,'%2F').replace(' ','+').replace(/\?/g,'%3F').replace(/\&/g,'%26').replace(/\=/g,'%3D');
 }
