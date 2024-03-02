@@ -54,13 +54,15 @@ var helangSearch = {
             },100);
         });
 
+        var arr = [1, 2];
+
         // 搜索 输入框 输入
         this.els.input.on("input",function () {
             _this.els.hotList.show();
             index = -1;
             if($(this).val()){
-                if(_this.searchIndex === 1) {
-                    // 翻译不走快排
+                if(arr.indexOf(_this.searchIndex) !== -1) {
+                    // 翻译/AI不走快排
                     setEngineList();
                 } else {
                     var engine = getEngineList()[_this.searchIndex];
@@ -90,7 +92,7 @@ var helangSearch = {
 
         // 文档
         $(document).click(function () {
-            if(_this.searchIndex !== 1) {
+            if(arr.indexOf(_this.searchIndex) === -1) {
                 _this.els.pickerList.hide();
                 _this.els.hotList.hide();
             }

@@ -81,16 +81,19 @@ function getDefaultList() {
 function setSearchList(serachList) {
     helangSearch.els.hotList.html(function () {
     	var flag = '&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;';
-        var str='';
+        var str = '';
         var num = 0;
+        var arr = [-1, 1, 2];
         $.each(serachList, function (index, item) {
-        	if(item[0] === -1 || item[0] === 1) {
+        	if(arr.indexOf(item[0]) !== -1) {
         		if(item[0] == -1) {
         			item[1] = flag + '<strong><i>' +item[1] + '</i></strong>';
         		}
         		str +='<a style="padding: 10px">';
         	} else {
         		str +='<a href="' + item[2] + '">';
+        	}
+        	if(item[0] !== -1) {
         		str +='<div class="list-num number">'+(++num)+'</div>';
         	}
             str += item[2] != '' ? "<img class='list-img' onerror='imgerrorfun();' src=" 
@@ -113,22 +116,44 @@ function getFanyiList() {
 	}
 	if(helangSearch.searchIndex === 1) {
 		$.ajax({
-		url:"https://tools.mgtv100.com/external/v1/baidu_translate",
-		type: "post",
-		data: {
-			text: helangSearch.els.input.val()
-		},
-		dataType: "json",
-		success:function(res){
-			if(res.data.trans_result == '') {
-				return list;
+			url:"https://tools.mgtv100.com/external/v1/baidu_translate",
+			type: "post",
+			data: {
+				text: helangSearch.els.input.val()
+			},
+			dataType: "json",
+			success:function(res){
+				if(res.data.trans_result == '') {
+					return list;
+				}
+				list[0][1] = fanyi + '<strong><i>' + res.data.trans_result + '</i></strong>';
+				setSearchList(list);
 			}
-			list[0][1] = fanyi + '<strong><i>' + res.data.trans_result + '</i></strong>';
-			setSearchList(list);
-		}
-	});
+		});
 	}
 	return list;
+}
+
+// AI
+var aiList = [];
+function getAiList() {
+	if(aiList.length === 0) {
+		aiList.unshift([2, '<strong style="color:#66E2BA"><i>AI</i></strong>：回车发送问题', '']);
+	}
+	return aiList;
+}
+function setAiList() {
+	aiList.unshift([2, '<strong style="color:#66DDE2"><i>ME</i></strong>：' + helangSearch.els.input.val(), '']);
+	$.ajax({
+		url: 'https://api.lolimi.cn/API/AI/gemini.php?msg=' + helangSearch.els.input.val(),
+		type: 'get',
+		success:function(res){
+			aiList.unshift([2, '<strong style="color:#66E2BA"><i>AI</i></strong>：<pre style="white-space: pre-line">' + res.data.output + '</pre>', '']);
+			setEngineList();
+		}
+	});
+	setEngineList();
+	document.getElementById("search-input").value = '';
 }
 
 // Linux 命令列表

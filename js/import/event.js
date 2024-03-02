@@ -31,4 +31,8 @@ document.onkeydown = function (event) {
         }
         index == -1 ? document.getElementById("search-input").focus() : as[index].focus({preventScroll:false});
     }
+    // 回车调用AI接口
+    if(helangSearch.searchIndex == 2 && !e.ctrlKey &&  e.keyCode == 13) {
+        setAiList();
+    }
 }
