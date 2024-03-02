@@ -79,45 +79,6 @@ function getDefaultList() {
 	];
 }
 
-// 翻译
-function getFanyiList() {
-	var fanyi = '<span style="user-select:none">翻译结果：</span>';
-	var list = [
-		[1, fanyi + '<strong><i>上方输入文本</i></strong>', '']
-	];
-	if(!helangSearch) {
-		return list;
-	}
-	if(helangSearch.searchIndex === 1) {
-		$.ajax({
-		url:"https://v.api.aa1.cn/api/api-fanyi-yd/index.php?type=3&msg=" + helangSearch.els.input.val(),
-		type: "get",
-		dataType: "json",
-		success:function(result){
-			if(result.text == '') {
-				return list;
-			}
-			list[0][1] = fanyi + '<strong><i>' + result.text + '</i></strong>';
-			setSearchList(list);
-		}
-	});
-	}
-	return list;
-}
-
-// Linux 命令列表
-function getLinuxList() {
-	var host = 'https://linux.cmsblogs.cn/c';
-	var list = [];
-	for(var key in linux_commands) {
-		var item = linux_commands[key];
-		var label = item.n + '-' + item.d;
-		var value = host + item.p + '.html';
-		list[key] = [0, label, value];
-	}
-	return list;
-}
-
 // 设置搜索导航列表
 function setSearchList(serachList) {
     helangSearch.els.hotList.html(function () {
@@ -141,4 +102,46 @@ function setSearchList(serachList) {
         });
         return str;
     });
+}
+
+// 翻译
+function getFanyiList() {
+	var fanyi = '<span style="user-select:none">翻译结果：</span>';
+	var list = [
+		[1, fanyi + '<strong><i>上方输入文本</i></strong>', '']
+	];
+	if(!helangSearch) {
+		return list;
+	}
+	if(helangSearch.searchIndex === 1) {
+		$.ajax({
+		url:"https://tools.mgtv100.com/external/v1/baidu_translate",
+		type: "post",
+		data: {
+			text: helangSearch.els.input.val()
+		},
+		dataType: "json",
+		success:function(res){
+			if(res.data.trans_result == '') {
+				return list;
+			}
+			list[0][1] = fanyi + '<strong><i>' + res.data.trans_result + '</i></strong>';
+			setSearchList(list);
+		}
+	});
+	}
+	return list;
+}
+
+// Linux 命令列表
+function getLinuxList() {
+	var host = 'https://linux.cmsblogs.cn/c';
+	var list = [];
+	for(var key in linux_commands) {
+		var item = linux_commands[key];
+		var label = item.n + '-' + item.d;
+		var value = host + item.p + '.html';
+		list[key] = [0, label, value];
+	}
+	return list;
 }

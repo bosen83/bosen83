@@ -7,8 +7,8 @@ function getEngineList() {
             'list': getDefaultList() 
         },
         {
-            // 有道
-            'engine': 'https://fanyi.youdao.com/index.html#/#',
+            // 翻译
+            'engine': 'https://fanyi.baidu.com/#en/zh/',
             'list': getFanyiList()
         },
         {
