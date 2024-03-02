@@ -69,13 +69,14 @@ function quickSort(arr) {
 
 // 获取网页图标
 function getFavicon(href) { 
-    var reg = new RegExp(/(\w+):\/\/([^/:]+)(:\d*)?/)
-    let matchObj = href.match(reg)
-    if (matchObj) {
-      return matchObj[0] + '/favicon.ico'
-    } else {
-      return null
-    }
+    // var reg = new RegExp(/(\w+):\/\/([^/:]+)(:\d*)?/)
+    // let matchObj = href.match(reg)
+    // if (matchObj) {
+    //   return matchObj[0] + '/favicon.ico'
+    // } else {
+    //   return null
+    // }
+  return "https://api.qqsuu.cn/api/dm-get?url=" + href;
 }
 
 // 输入框特殊符号处理
