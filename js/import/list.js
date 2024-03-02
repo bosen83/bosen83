@@ -3,12 +3,12 @@ function getDefaultList() {
 	return [
 		[-1, '🎈网站类🎈', ''],
 	    [0, 'Leetcode - 算法练习平台', 'https://leetcode.cn/problemset/all/'],
+	    [0, '大米星球 - 影视网站', 'https://www.dmdy1.vip/'],
 	    [0, 'Runoob - 菜鸟教程', 'https://www.runoob.com/'],
 	    [0, 'W3school - Web技术教程', 'https://www.w3school.com.cn/'],
 	    [0, 'Gitee - 基于Git的代码托管研发平台', 'https://gitee.com/'],
 	    [0, 'Github - Where the world builds software', 'https://github.com/'],
 	    [-1, '🛠️工具类🛠️', ''],
-	    [0, '大米星球 - 影视网站', 'https://www.dmdy1.vip/'],
 	    [0, 'Photopea - 在线PS', 'https://www.gaituya.com/ps/'],
 	    [0, 'ProcessOn - 免费在线作图', 'https://www.processon.com/diagrams'],
 	    [0, 'MD5 - 加密工具', 'https://www.toolhelper.cn/DigestAlgorithm/MD5'],

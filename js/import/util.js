@@ -6,18 +6,45 @@ function imgerrorfun(){
 } 
 
 // 获取两个字符串的相似度
-function getSimilarity(str1, str2) {
-    let sameNum = 0;
-    for (let i = 0; i < str1.length; i++) {
-        for(let j = 0; j < str2.length; j++){
-            if(str1[i].toLowerCase() === str2[j].toLowerCase()) {
-                sameNum++;
-                break
-            }
-        }
+function getSimilarity(s, t) {
+  if (!s || !t) {
+    return 0
+  }
+  s = s.toLowerCase();
+  t = t.toLowerCase();
+  if(s === t){
+    return 100;
+  }
+  var l = s.length > t.length ? s.length : t.length
+  var n = s.length
+  var m = t.length
+  var d = []
+  var min = function (a, b, c) {
+    return a < b ? (a < c ? a : c) : (b < c ? b : c)
+  }
+  var i, j, si, tj, cost
+  if (n === 0) return m
+  if (m === 0) return n
+  for (i = 0; i <= n; i++) {
+    d[i] = []
+    d[i][0] = i
+  }
+  for (j = 0; j <= m; j++) {
+    d[0][j] = j
+  }
+  for (i = 1; i <= n; i++) {
+    si = s.charAt(i - 1)
+    for (j = 1; j <= m; j++) {
+      tj = t.charAt(j - 1)
+      if (si === tj) {
+        cost = 0
+      } else {
+        cost = 1
+      }
+      d[i][j] = min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost)
     }
-    let length = str1.length > str2.length ? str1.length : str2.length;
-    return (sameNum/length) * 100 || 0;
+  }
+  return (1 - d[n][m] / l) * 100
 }
 
 // 根据权值快排
