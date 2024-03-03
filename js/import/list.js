@@ -107,9 +107,9 @@ function setSearchList(serachList) {
 
 // 翻译
 function getFanyiList() {
-	var fanyi = '<span style="user-select:none">翻译结果：</span>';
+	var fanyi = '<span style="user-select:none">👻翻译结果：</span>';
 	var list = [
-		[1, fanyi + '<strong><i>上方输入文本</i></strong>', '']
+		[1, fanyi + '<strong><i>🐼请在上方输入文本🐼</i></strong>', '']
 	];
 	if(!helangSearch) {
 		return list;
@@ -138,17 +138,18 @@ function getFanyiList() {
 var aiList = [];
 function getAiList() {
 	if(aiList.length === 0) {
-		aiList.unshift([2, '<strong style="color:#66E2BA"><i>AI</i></strong>：回车发送问题', '']);
+		aiList.unshift([2, '<strong style="color:#66E2BA">🌏 AI </strong> ：请输入内容后回车发送', '']);
 	}
 	return aiList;
 }
 function setAiList() {
-	aiList.unshift([2, '<strong style="color:#66DDE2"><i>ME</i></strong>：' + helangSearch.els.input.val(), '']);
+	aiList.unshift([2, '<strong style="color:#66DDE2">🧙 ME </strong>：' + helangSearch.els.input.val(), '']);
+	aiList.unshift([2, '<strong style="color:#66E2BA">🌏 AI </strong>：' + '正在思考中，请稍后 ~', '']);
 	$.ajax({
 		url: 'https://api.lolimi.cn/API/AI/gemini.php?msg=' + helangSearch.els.input.val(),
 		type: 'get',
 		success:function(res){
-			aiList.unshift([2, '<strong style="color:#66E2BA"><i>AI</i></strong>：' + marked.parse(res.data.output), '']);
+			aiList[0] = [2, '<strong style="color:#66E2BA">🌏 AI </strong>：' + marked.parse(res.data.output), ''];
 			setEngineList();
 		}
 	});
