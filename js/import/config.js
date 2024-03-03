@@ -1,7 +1,7 @@
 // 导入js文件
 document.write(
 	// jQuery
-	'<script src="js/jquery.js"></script>',
+	'<script src="js/import/jquery.js"></script>',
 	// 导航列表
 	'<script src="js/import/list.js"></script>',
 	// 搜索引擎
@@ -10,6 +10,8 @@ document.write(
 	'<script src="js/import/event.js"></script>',
 	// 工具类
 	'<script src="js/import/util.js"></script>',
+	// Markdown 解析
+	'<script src="js/import/marked.js"></script>',
 	// Linux 命令列表
 	'<script src="https://linux.cmsblogs.cn/js/dt.js"></script>',
 );

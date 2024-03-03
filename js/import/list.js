@@ -148,7 +148,7 @@ function setAiList() {
 		url: 'https://api.lolimi.cn/API/AI/gemini.php?msg=' + helangSearch.els.input.val(),
 		type: 'get',
 		success:function(res){
-			aiList.unshift([2, '<strong style="color:#66E2BA"><i>AI</i></strong>：<pre style="white-space: pre-line">' + res.data.output + '</pre>', '']);
+			aiList.unshift([2, '<strong style="color:#66E2BA"><i>AI</i></strong>：' + marked.parse(res.data.output), '']);
 			setEngineList();
 		}
 	});
