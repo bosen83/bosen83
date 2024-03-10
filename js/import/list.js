@@ -145,11 +145,16 @@ function getAiList() {
 function setAiList() {
 	aiList.unshift([2, '<strong style="color:#66DDE2">🧙 ME </strong>：' + helangSearch.els.input.val(), '']);
 	aiList.unshift([2, '<strong style="color:#66E2BA">🌏 AI </strong>：' + '正在思考中，请稍后 ~', '']);
+	marked.setOptions({
+	  highlight: function (code) {
+	    return hljs.highlightAuto(code).value;
+	  }
+	});
 	$.ajax({
 		url: 'https://api.lolimi.cn/API/AI/gemini.php?msg=' + helangSearch.els.input.val(),
 		type: 'get',
 		success:function(res){
-			aiList[0] = [2, '<strong style="color:#66E2BA">🌏 AI </strong>：' + marked.parse(res.data.output), ''];
+			aiList[0] = [2, '<strong style="color:#66E2BA">🌏 AI </strong>：' + marked(res.data.output), ''];
 			setEngineList();
 		}
 	});
