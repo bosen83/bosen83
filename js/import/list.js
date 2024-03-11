@@ -135,16 +135,18 @@ function getFanyiList() {
 }
 
 // AI
+var myName = '<strong style="color:#66DDE2">🧙 ME </strong>';
+var aiName = '<strong style="color:#66E2BA">🌏 AI </strong>';
 var aiList = [];
 function getAiList() {
 	if(aiList.length === 0) {
-		aiList.unshift([2, '<strong style="color:#66E2BA">🌏 AI </strong> ：请输入内容后回车发送', '']);
+		aiList.unshift([2, aiName + '：请输入内容后回车发送', '']);
 	}
 	return aiList;
 }
 function setAiList() {
-	aiList.unshift([2, '<strong style="color:#66DDE2">🧙 ME </strong>：' + helangSearch.els.input.val(), '']);
-	aiList.unshift([2, '<strong style="color:#66E2BA">🌏 AI </strong>：' + '正在思考中，请稍后 ~', '']);
+	aiList.unshift([2, myName + '：' + helangSearch.els.input.val(), '']);
+	aiList.unshift([2, aiName + '：' + '正在思考中，请稍后 ~', '']);
 	marked.setOptions({
 	  highlight: function (code) {
 	    return hljs.highlightAuto(code).value;
@@ -154,7 +156,7 @@ function setAiList() {
 		url: 'https://api.lolimi.cn/API/AI/gemini.php?msg=' + helangSearch.els.input.val(),
 		type: 'get',
 		success:function(res){
-			aiList[0] = [2, '<strong style="color:#66E2BA">🌏 AI </strong>：' + marked(res.data.output), ''];
+			aiList[0] = [2, aiName + '：' + marked(res.data.output), ''];
 			setEngineList();
 		}
 	});
