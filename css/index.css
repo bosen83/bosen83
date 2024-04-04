@@ -133,7 +133,7 @@ a:focus {
     text-align: center;
     width: 40px;
 }
-.container .search{
+.container #search{
     width: 89px;
     height: 46px;
     background-color: #08f;
@@ -143,7 +143,7 @@ a:focus {
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
-.container .search:hover {
+.container #search:hover {
     opacity: 0.8;
 }
 ::-webkit-scrollbar {
