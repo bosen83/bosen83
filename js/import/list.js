@@ -163,16 +163,3 @@ function setAiList() {
 	setEngineList();
 	document.getElementById("search-input").value = '';
 }
-
-// Linux 命令列表
-function getLinuxList() {
-	var host = 'https://linux.cmsblogs.cn/c';
-	var list = [];
-	for(var key in linux_commands) {
-		var item = linux_commands[key];
-		var label = item.n + '-' + item.d;
-		var value = host + item.p + '.html';
-		list[key] = [0, label, value];
-	}
-	return list;
-}

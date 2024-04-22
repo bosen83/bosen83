@@ -16,11 +16,6 @@ function getEngineList() {
             'engine': '#',
             'list': getAiList()
         },
-        {
-            // Linux 命令列表
-            'engine': 'https://linux.cmsblogs.cn/list.html#!kw=',
-            'list': getLinuxList()
-        },
     ];
 }
 
